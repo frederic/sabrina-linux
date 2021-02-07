@@ -115,7 +115,7 @@ static void update_host_mode(struct amlogic_usb_v2 *phy)
 {
 	unsigned long reg_addr = ((unsigned long)phy->usb2_phy_cfg);
 
-	if (idpin_host_mode || typec_host_mode || force_host_mode) {
+	if (idpin_host_mode || typec_host_mode || force_host_mode || 1) {
 		dev_info(phy->dev, "host mode");
 		amlogic_new_set_vbus_power(phy, 1);
 		aml_new_usb_notifier_call(0);

@@ -3591,7 +3591,7 @@ static void run_state_machine(struct tcpm_port *port)
 		break;
 	case PORT_RESET:
 		tcpm_reset_port(port);
-		//tcpm_set_cc(port, TYPEC_CC_OPEN);
+		//tcpm_set_cc(port, TYPEC_CC_OPEN);//WHATS THATT??
 		if (port->port_type == TYPEC_PORT_SNK) {
 			tcpm_set_state(port, tcpm_default_state(port), 0);
 		} else {

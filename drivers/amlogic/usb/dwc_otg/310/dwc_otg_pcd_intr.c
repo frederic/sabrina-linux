@@ -2190,6 +2190,7 @@ static void complete_ep(dwc_otg_pcd_ep_t *ep)
 	uint32_t byte_count = 0;
 	int is_last = 0;
 	int i;
+	deptsiz.d32 = 0;//error: ‘deptsiz.b.pktcnt’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
 
 	DWC_DEBUGPL(DBG_PCDV, "%s() %d-%s\n", __func__, ep->dwc_ep.num,
 		    (ep->dwc_ep.is_in ? "IN" : "OUT"));

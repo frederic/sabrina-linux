@@ -399,7 +399,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common -fshort-wchar \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
-		   -Werror	\
+		   -Werror -Wno-stringop-overflow -Wno-maybe-uninitialized \
 		   -fuse-ld=bfd	\
 		   -std=gnu89 $(call cc-option,-fno-PIE)
 

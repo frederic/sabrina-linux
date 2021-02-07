@@ -14,10 +14,10 @@ readonly kernel_dir=.
 readonly product=$1
 readonly workspace_path=$2
 readonly bootdir=./arch/arm64/boot
-DTIMGTOOL=../sdk/tools/mkdtimg
+DTIMGTOOL=/home/user/tools/android/libufdt/utils/src/mkdtboimg.py
 
 arch=arm64
-cross_compile=../prebuilt/toolchain/aarch64/bin/aarch64-cros-linux-gnu-
+cross_compile=aarch64-linux-gnu-
 cpu_num=$(grep -c processor /proc/cpuinfo)
 
 function usage(){

@@ -1,0 +1,3 @@
+#define UTS_RELEASE "4.9.180"
+#define UTS_RELEASE_FULL "4.9.180-gd1730274d8fb"
+#define UTS_RELEASEY "4.9.y"

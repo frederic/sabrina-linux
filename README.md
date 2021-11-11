@@ -4,7 +4,7 @@
 ```
 # apt install gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu
 ```
-For building DTB, variable **DTIMGTOOL** in *build_kernel.sh* script must contain the path for tool [mkdtboimg.py](https://android.googlesource.com/platform/system/libufdt/+/refs/heads/master/utils/src/mkdtboimg.py).
+To build DTB, variable **DTIMGTOOL** in *build_kernel.sh* script must contain the path for tool [mkdtboimg.py](https://android.googlesource.com/platform/system/libufdt/+/refs/heads/master/utils/src/mkdtboimg.py).
 
 ## build
 ```
